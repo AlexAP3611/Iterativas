@@ -13,28 +13,32 @@ class FrontController{
                     $controlador->index();
                 }
                 , 'get');
-
-
-        Route::add('/demo-proveedores', 
-                function(){
-                    $controlador = new \Com\Daw2\Controllers\InicioController();
-                    $controlador->demo();
-                }
-                , 'get');
-
-        Route::add('/ejercicios-iterativas',
-            function(){
+        Route::add(
+            '/inicio2',
+            function () {
                 $controlador = new \Com\Daw2\Controllers\InicioController();
-                $controlador->iterativas();
+                $controlador->inicio2();
+            },
+            'get'
+        );
+        Route::add('/iterativas3',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->iterativas3();
             }
             , 'get');
         Route::add('/iterativas3',
             function(){
-                $controlador = new \Com\Daw2\Controllers\InicioController();
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
                 $controlador->doIterativas3();
             }
+            , 'post');
+        Route::add('/demo-proveedores',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\InicioController();
+                $controlador->demo();
+            }
             , 'get');
-
         Route::pathNotFound(
             function(){
                 $controller = new \Com\Daw2\Controllers\ErroresController();

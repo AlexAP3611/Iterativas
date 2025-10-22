@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Com\Daw2\Controllers;
 
-class IterativasController
+use Com\Daw2\Core\BaseController;
+
+class IterativasController extends BaseController
 {
     public function iterativas3(): void
     {
@@ -34,7 +36,6 @@ class IterativasController
             foreach ($tmp as $item) {
                 $procesada[] = explode(',', $item);
             }
-
             //Comprobamos si son numeros todos los elementos de la matriz
             $noNumeros = [];
             foreach ($procesada as $lista) {
@@ -51,13 +52,11 @@ class IterativasController
                 $tamanoInicial = count($procesada[0]);
                 $errorTamano = false;
                 $i = 1;
-                while ($i < count($procesada) && $errorTamano) {
+                while ($i < count($procesada) && !$errorTamano) {
                     $errorTamano = count($procesada[$i]) !== $tamanoInicial;
                 }
                 if ($errorTamano) {
                     $errors['matriz'] = 'Las filas no tienen el mismo tamaño';
-                } else {
-
                 }
             }
         }

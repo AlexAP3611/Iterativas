@@ -15,6 +15,16 @@ class InicioController extends \Com\Daw2\Core\BaseController
         );
         $this->view->showViews(array('templates/header.view.php', 'inicio.view.php', 'templates/footer.view.php'), $data);
     }
+    public function inicio2()
+    {
+        $data = array(
+            'titulo' => 'Página de inicio NUEVA',
+            'breadcrumb' => ['Inicio'],
+            'seccion' => '/inicio2',
+            'numProductos' => 1500
+        );
+        $this->view->showViews(array('templates/header.view.php', 'inicio.view.php', 'templates/footer.view.php'), $data);
+    }
 
     public function demo()
     {
@@ -26,7 +36,7 @@ class InicioController extends \Com\Daw2\Core\BaseController
         $this->view->showViews(array('templates/header.view.php', 'proveedores.sample.php', 'templates/footer.view.php'), $data);
     }
 
-    public function iterativas()
+    public function iterativas3()
     {
         $data = array(
             'titulo' => 'Ejercicios iterativas',

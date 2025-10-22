@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                  <a href="/ejercicios-iterativas" class="nav-link <?php echo isset($seccion) && $seccion === '/ejercicios-iterativas' ? 'active' : ''; ?>">
+                  <a href="/iterativas3" class="nav-link <?php echo isset($seccion) && $seccion === '/iterativas3' ? 'active' : ''; ?>">
                       <i class="fas fa-atom nav-icon"></i>
                       <p>Ejercicios iterativas</p>
                   </a>
