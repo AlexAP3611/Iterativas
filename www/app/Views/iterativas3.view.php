@@ -2,6 +2,19 @@
 
 declare(strict_types=1);
 ?>
+<?php
+if (isset($input['resuelto'])) {
+    ?>
+    <div class="alert alert-success" role="alert">
+        <?php
+        foreach($input['resultado'] as $r){
+            echo implode(', ', $r).'<br>';
+        }
+        ?>
+    </div>
+<?php
+}
+?>
 <div class="card shadow mb-4">
     <form method="post" action="">
         <div
@@ -21,7 +34,7 @@ declare(strict_types=1);
                                maxlength="9999"
                                placeholder="1,2,3|4,5,6|7,8,9"
                         />
-                        <p class="text-error small">
+                        <p class="text-danger small">
                             <?php
                             echo $errors['matriz'] ?? '';
                             ?>
