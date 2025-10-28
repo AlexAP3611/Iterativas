@@ -35,15 +35,4 @@ class InicioController extends \Com\Daw2\Core\BaseController
         );
         $this->view->showViews(array('templates/header.view.php', 'proveedores.sample.php', 'templates/footer.view.php'), $data);
     }
-
-    public function iterativas3()
-    {
-        $data = array(
-            'titulo' => 'Ejercicios iterativas',
-            'breadcrumb' => ['Inicio', 'Ejercicios iterativas'],
-            'seccion' => '/iterativas'
-        );
-        $this->view->showViews(array('templates/header.view.php', 'iterativas3.view.php', 'templates/footer.view.php'), $data);
-    }
-
 }

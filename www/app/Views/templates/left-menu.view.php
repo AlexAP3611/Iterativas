@@ -35,7 +35,25 @@
               <li class="nav-item">
                   <a href="/iterativas3" class="nav-link <?php echo isset($seccion) && $seccion === '/iterativas3' ? 'active' : ''; ?>">
                       <i class="fas fa-atom nav-icon"></i>
-                      <p>Ejercicios iterativas</p>
+                      <p>Iterativas 3</p>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="/iterativas4" class="nav-link <?php echo isset($seccion) && $seccion === '/iterativas4' ? 'active' : ''; ?>">
+                      <i class="fas fa-atom nav-icon"></i>
+                      <p>Iterativas 4</p>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="/iterativas5" class="nav-link <?php echo isset($seccion) && $seccion === '/iterativas5' ? 'active' : ''; ?>">
+                      <i class="fas fa-atom nav-icon"></i>
+                      <p>Iterativas 5</p>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="/iterativas6" class="nav-link <?php echo isset($seccion) && $seccion === '/iterativas6' ? 'active' : ''; ?>">
+                      <i class="fas fa-atom nav-icon"></i>
+                      <p>Iterativas 6</p>
                   </a>
               </li>
             </ul>

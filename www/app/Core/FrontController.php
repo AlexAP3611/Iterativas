@@ -33,6 +33,42 @@ class FrontController{
                 $controlador->doIterativas3();
             }
             , 'post');
+        Route::add('/iterativas4',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->iterativas4();
+            }
+            , 'get');
+        Route::add('/iterativas4',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->doIterativas4();
+            }
+            , 'post');
+        Route::add('/iterativas5',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->iterativas5();
+            }
+            , 'get');
+            Route::add('/iterativas5',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->doIterativas5();
+            }
+            , 'post');
+        Route::add('/iterativas6',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->iterativas6();
+            }
+            , 'get');
+        Route::add('/iterativas6',
+            function(){
+                $controlador = new \Com\Daw2\Controllers\IterativasController();
+                $controlador->doIterativas6();
+            }
+            , 'post');
         Route::add('/demo-proveedores',
             function(){
                 $controlador = new \Com\Daw2\Controllers\InicioController();
